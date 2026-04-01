@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('judul')
-    
+    Dashboard
 @endsection
 @section('content')
     <h1>SELAMAT DATANG {{ $firstName }} {{ $lastName }}</h1>

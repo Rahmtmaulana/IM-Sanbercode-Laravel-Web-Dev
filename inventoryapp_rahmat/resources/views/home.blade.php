@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('judul')
-  
+  Home
 @endsection
 @section('content')
 
