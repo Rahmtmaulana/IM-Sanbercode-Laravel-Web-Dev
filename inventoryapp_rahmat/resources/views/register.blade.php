@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>Daftar</title>
-</head>
-<body>
-
+@extends('layouts.master')
+@section('judul')
+    
+@endsection
+@section('content')
     <h1>Buat Account Baru!</h1>
 
     <h2>Sign Up Form</h2>
@@ -13,10 +10,10 @@
     <form action="/welcome" method="POST">
     @csrf
         <label>First name:</label><br>
-        <input type="text" name="firstname"><br><br>
+        <input type="text" name="first_name"><br><br>
 
         <label>Last name:</label><br>
-        <input type="text" name="lastname"><br><br>
+        <input type="text" name="last_name"><br><br>
 
         <label>Gender:</label><br>
         <input type="radio" name="gender" value="male"> Male <br>
@@ -44,5 +41,6 @@
         <input type="submit" value="Sign Up">
     </form>
 
-</body>
-</html>
+@endsection
+
+    
